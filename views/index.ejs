@@ -1,0 +1,32 @@
+
+<%- include("templates/meta.ejs"); %>
+
+<!-- this is the navigationbar.ejs singular code to be used across all pages -->
+<div class="">
+    <%- include("templates/navigationbar.ejs"); %>
+</div>
+
+<body>
+    <h1 class="fw-bold mt-5" id="homepage-title"><%= title %></h1>
+    <div id="ejscontent">
+        <%- htmlContent %>
+    </div>
+    <div class="d-flex position-absolute top-50 start-50 translate-middle" id="homepage-maincontainer">
+        <div class="img-box p-3">
+            <a href='https://expressjs.com/'><img src="<%= expressjs %>" alt="expressjs logo" id="expressjslogo"></a>
+        </div>
+        <div class="img-box p-3">
+            <a href="https://ejs.co/"><img src="<%= ejs %>" alt="ejs logo" id="ejslogo"></a>
+        </div>
+        <div class="img-box p-3">
+            <a href="https://getbootstrap.com/"><img src="<%= bootstrap %>" alt="bootstrap logo" id="bootstraplogo"></a>
+        </div>
+    </div>
+
+    <div class="fixed-bottom">
+        <%- include("templates/footer.ejs"); %>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+body {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+/* Home Page */
+
+#homepage-maincontainer {
+    margin-top: 100px;
+}
+
+#homepage-title {
+    text-shadow: 3px 3px 5px gold;
+}
+
+#ejscontent {
+    margin-top: 100px;
+}
+
+#expressjslogo {
+    width: 300px;
+    border-radius: 100%;
+    ;
+    box-shadow: 1px 3px 3px 5px gold;
+}
+
+#ejslogo {
+    width: 260px;
+    border-radius: 100%;
+    ;
+    box-shadow: 1px 3px 3px 5px gold;
+}
+
+#bootstraplogo {
+    width: 210px;
+    border-radius: 100%;
+    ;
+    box-shadow: 1px 3px 3px 5px gold;
+}
+
+.img-box {
+    background: var(--img) center;
+    background-size: cover;
+    flex-basis: 300px;
+    position: relative;
+    transition: 400ms all ease;
+    filter: grayscale(100%) opacity(35%);
+}
+
+.img-box:nth-child(odd) {
+    transform: translateY(-20px);
+}
+
+.img-box:hover {
+    flex-basis: 400px;
+    filter: grayscale(0%) opacity(100%);
+}
+
+
+/* about page */
+
+#about-title {
+    text-shadow: 3px 3px 5px gold;
+}
+
+#about-container {
+    text-align: center;
+    margin-left: 30%;
+}
+
+#about-photo {
+    border-radius: 10%;
+    height: 300px;
+    box-shadow: 1px 3px 3px 5px gold;
+    transition: transform 1s;
+}
+
+#about-photo:hover {
+    transform: scale(1.2);
+}
+
+#about-description {
+    width: 400px;
+    margin-left: 70px;
+    box-shadow: 1px 3px 3px 5px gold;
+    transition: transform 1s;
+}
+
+#about-description:hover {
+    transform: scale(1.2);
+}
+
+/* contact page */
+
+#contact-title {
+    text-shadow: 3px 3px 5px gold;
+}
+
+.contact-vars {
+    box-shadow: 1px 3px 3px 5px gold;
+}
+
+.cform {
+    margin: auto;
+}

@@ -1,0 +1,33 @@
+<%- include("templates/meta.ejs"); %>
+<div class="">
+  <%- include("templates/navigationbar.ejs"); %>
+</div>
+
+<body>
+  <div>
+    <h1 class="fw-bold p-4" id="contact-title"><%= title %></h1>
+  </div>
+  <div>
+    <form class="fw-bold fs-3 w-50 m-auto p-5" method="post" action="mailto:nasmerfontanilla@gmail.com">
+      <div class="mb-5 contact-vars">
+        <label htmlFor="name" class="form-label"><%= name %></label>
+        <input type="text" class="form-control bg-dark text-white" id="name" aria-describedby="nameHelp" />
+      </div>
+      <div class="mb-5 contact-vars">
+        <label htmlFor="email" class="form-label"><%= emailAddress %></label>
+        <input type="email" class="form-control bg-dark text-white" id="email" aria-describedby="emailHelp" />
+      </div>
+      <div class="mb-5 form-check contact-vars p-1">
+        <label htmlFor="message" class="form-label"><%= message %></label>
+        <textarea class="form-control bg-dark text-white" id="message" rows="4"></textarea>
+      </div>
+      <button type="submit" class="btn btn-warning">Submit</button>
+    </form>
+  </div>
+
+  <div class="fixed-bottom">
+    <%- include("templates/footer.ejs", { footerData }); %>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+<%- include("templates/meta.ejs"); %>
+<div class="">
+    <%- include("templates/navigationbar.ejs"); %>
+</div>
+
+<body>
+    <h1 class="fw-bold mt-5" id="about-title"><%= title %></h1>
+
+    <div class="d-flex mt-5" id="about-container">
+        <img src="<%= profilePhoto %> " alt="profilePhoto" id="about-photo">
+        <p class="text-wrap mt-4 fw-light" id="about-description"><%- description %></p>
+    </div>
+    <div class="fixed-bottom">
+        <%- include("templates/footer.ejs", { footerData }); %>
+    </div>
+
+</body>
+
+</html>
