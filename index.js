@@ -1,10 +1,15 @@
 import express from "express";
+import path from 'path';
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 // Serve static files from the 'assets' directory
 app.use(express.static('assets'));
+
+// For view on engine on Vercel
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'ejs');
 
 app.get("/", (req, res) => {
   const data = {
